@@ -12,10 +12,10 @@ import java.util.Set;
 import static java.util.Collections.singleton;
 import static javax.security.enterprise.identitystore.IdentityStore.ValidationType.VALIDATE;
 
-public class AuthenticationIS implements IdentityStore {
+public class AuthenticationIdentityStore implements IdentityStore {
 
     @Inject
-    AuthSession session;
+    private AuthSession session;
 
     @Override
     public CredentialValidationResult validate(Credential credential) {

@@ -24,7 +24,8 @@ public class SampleSession {
     private static final Logger LOGGER = Logger.getLogger(SampleResource.class.getName());
 
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
+
     @Inject
     private SecurityContext securityContext;
 

@@ -1,11 +1,9 @@
 package ge.ol.ping.security;
 
-import ge.ol.ping.util.BodyReader;
 import io.jsonwebtoken.ExpiredJwtException;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
-import javax.json.JsonObject;
 import javax.security.enterprise.AuthenticationException;
 import javax.security.enterprise.AuthenticationStatus;
 import javax.security.enterprise.authentication.mechanism.http.HttpAuthenticationMechanism;

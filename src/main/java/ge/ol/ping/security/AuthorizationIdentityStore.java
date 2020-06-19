@@ -11,10 +11,10 @@ import static java.util.Collections.emptySet;
 import static java.util.Collections.singleton;
 import static javax.security.enterprise.identitystore.IdentityStore.ValidationType.PROVIDE_GROUPS;
 
-public class AuthorizationIS implements IdentityStore {
+public class AuthorizationIdentityStore implements IdentityStore {
 
     @Inject
-    AuthSession session;
+    private AuthSession session;
 
     @Override
     public Set<String> getCallerGroups(CredentialValidationResult validationResult) {

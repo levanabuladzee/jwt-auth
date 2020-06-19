@@ -22,7 +22,8 @@ public class AuthSession {
     private static final Logger LOGGER = Logger.getLogger(AuthResource.class.getName());
 
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
+
     @Inject
     private SecurityContext securityContext;
 
